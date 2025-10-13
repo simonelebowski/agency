@@ -153,8 +153,8 @@ export default function CoursesPage({ lang }: { lang: Lang }) {
             lang={lang}
             href={
               lang === "ar"
-                ? `/courses/${course.slug}`
-                : `/en/courses/${course.slug}`
+                ? `/courses/${course.city.toLowerCase()}/${course.slug}`
+                : `/en/courses/${course.city.toLowerCase()}/${course.slug}`
             }
           />
         ))}

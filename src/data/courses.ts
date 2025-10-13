@@ -10,6 +10,8 @@ export type Course = {
   priceSAR: number; // Approx SAR (for display)
   startDates: string[]; // ISO dates
   highlights: string[];
+  highlightsEN: string[];
+  highlightsAR: string[];
 };
 
 export const courses: Course[] = [
@@ -24,7 +26,9 @@ export const courses: Course[] = [
     durationWeeks: 8,
     priceSAR: 3200,
     startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-    highlights: ["Small groups", "Evening classes", "MOE-compliant"],
+        highlights: ["Meet professionals", "Presentation skills", "Networking"],
+    highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
+    highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
   },
   {
     slug: "ielts-prep-jeddah",
@@ -37,7 +41,9 @@ export const courses: Course[] = [
     durationWeeks: 6,
     priceSAR: 4200,
     startDates: ["2025-10-25", "2025-11-15"],
-    highlights: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
+    highlights: ["Meet professionals", "Presentation skills", "Networking"],
+    highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
+    highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
   },
   {
     slug: "intensive-london",
@@ -50,7 +56,9 @@ export const courses: Course[] = [
     durationWeeks: 12,
     priceSAR: 9800,
     startDates: ["2026-01-06", "2026-02-03"],
-    highlights: ["20h/week", "Central campus", "Accommodation help"],
+    highlights: ["Meet professionals", "Presentation skills", "Networking"],
+    highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
+    highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
   },
   {
     slug: "business-english-dublin",
@@ -64,6 +72,8 @@ export const courses: Course[] = [
     priceSAR: 8700,
     startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
     highlights: ["Meet professionals", "Presentation skills", "Networking"],
+    highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
+    highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
   },
   {
     slug: "online-advanced-toronto",
@@ -76,6 +86,8 @@ export const courses: Course[] = [
     durationWeeks: 8,
     priceSAR: 2900,
     startDates: ["2025-10-18", "2025-11-08", "2025-12-06"],
-    highlights: ["Live classes", "Recorded sessions", "Flexible hours"],
+    highlights: ["Meet professionals", "Presentation skills", "Networking"],
+    highlightsEN: ["Live classes", "Recorded sessions", "Flexible hours"],
+    highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
   },
 ];

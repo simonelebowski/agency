@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import Link from "next/link";
 import type { Course } from "@/data/courses";
 
 export default function CourseCard({
@@ -15,7 +15,7 @@ export default function CourseCard({
   const dir = isAr ? "rtl" : "ltr";
 
   return (
-    <a
+    <Link
       href={href}
       dir={dir}
       className="block rounded-2xl border bg-white hover:shadow-md transition-shadow p-5"
@@ -76,6 +76,6 @@ export default function CourseCard({
           </span>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
