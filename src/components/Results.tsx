@@ -122,15 +122,20 @@ export default function Results({ lang, initialQuery }: { lang: Lang; initialQue
         <select className="rounded-xl border p-3 bg-white" value={city} onChange={e=>setFilter("city", e.target.value)}>
           <option value="">{t.filters.city}</option>
           {filters.cities.map((city, index) => (
-            <option value={city.toLowerCase()}>{city}</option>
+            <option key={index} value={city.toLowerCase()}>{city}</option>
           ))}
-          {/* map cities from your data */}
         </select>
         <select className="rounded-xl border p-3 bg-white" value={level} onChange={e=>setFilter("level", e.target.value)}>
           <option value="">{t.filters.level}</option>
+          {filters.levels.map((level, index) => (
+            <option key={index} value={level}>{level}</option>
+          ))}
         </select>
         <select className="rounded-xl border p-3 bg-white" value={type} onChange={e=>setFilter("type", e.target.value)}>
           <option value="">{t.filters.type}</option>
+            {filters.types.map((type, index) => (
+              <option key={index} value={type}>{type}</option>
+          ))}
         </select>
         <select className="rounded-xl border p-3 bg-white lg:col-start-5" value={sort} onChange={e=>setFilter("sort", e.target.value)}>
           <option value="relevance">{t.sorts.relevance}</option>
