@@ -41,7 +41,7 @@ export default function CourseSearch({ t, filters, setFilters }) {
             </option>
           ))}
         </select>
-        <button className="rounded-xl bg-indigo-600 text-white p-3 hover:bg-indigo-700">
+        <button className="rounded-xl bg-indigo-600 text-white p-3 hover:bg-indigo-700 cursor-pointer">
           {t.search.btn}
         </button>
       </div>

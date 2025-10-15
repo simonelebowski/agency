@@ -1,5 +1,5 @@
 import CoursePage from "@/components/CoursePage";
-import { courses } from "@/data/courses"; 
+import { getOfferingByCitySlug } from "@/data/catalog";
 import { notFound } from "next/navigation";
 
 type Params = { city: string; slug: string };
@@ -7,10 +7,8 @@ type Params = { city: string; slug: string };
 export default async function Page({ params }: { params: Promise<Params>; }) {
 const { city, slug } = await params;
 
-  const course = courses.find(
-    c => c.slug === slug && c.city.toLowerCase() === city.toLowerCase()
-  );
-  if (!course) return notFound();
+const offering = getOfferingByCitySlug(city as any, slug);
+if (!offering) return notFound();
 
-  return <CoursePage lang="en" dir='ltr' course={course}/>;
+  return <CoursePage lang="en" dir='rtl' course={offering}/>;
 }

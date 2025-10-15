@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { courses } from "@/data/courses"; // your full list or a DB query
+import { allOfferings } from "@/data/catalog";
 
 function applyFilters(list: any[], { city, level, type }: any) {
   return list.filter(c =>
@@ -27,7 +27,7 @@ export async function GET(req: Request) {
   const page  = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10));
   const pageSize = 24;
 
-  const filtered = applySort(applyFilters(courses, { city, level, type }), sort);
+  const filtered = applySort(applyFilters(allOfferings, { city, level, type }), sort);
   const start = (page - 1) * pageSize;
   const items = filtered.slice(start, start + pageSize);
 

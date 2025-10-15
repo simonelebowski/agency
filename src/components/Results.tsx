@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import CourseCard from "@/components/CourseCard";
+import { filters } from "@/data/filters";
 
 type Lang = "ar" | "en";
 
@@ -120,6 +121,9 @@ export default function Results({ lang, initialQuery }: { lang: Lang; initialQue
       <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
         <select className="rounded-xl border p-3 bg-white" value={city} onChange={e=>setFilter("city", e.target.value)}>
           <option value="">{t.filters.city}</option>
+          {filters.cities.map((city, index) => (
+            <option value={city.toLowerCase()}>{city}</option>
+          ))}
           {/* map cities from your data */}
         </select>
         <select className="rounded-xl border p-3 bg-white" value={level} onChange={e=>setFilter("level", e.target.value)}>
@@ -161,7 +165,7 @@ export default function Results({ lang, initialQuery }: { lang: Lang; initialQue
           <button
             onClick={loadMore}
             disabled={loading}
-            className="px-5 py-3 rounded-xl border bg-white hover:bg-slate-50 disabled:opacity-50"
+            className="px-5 py-3 rounded-xl border bg-white hover:bg-slate-50 disabled:opacity-50 cursor-pointer"
           >
             {loading ? (isAr ? "جار التحميل..." : "Loading...") : (isAr ? "عرض المزيد" : "Load more")}
           </button>

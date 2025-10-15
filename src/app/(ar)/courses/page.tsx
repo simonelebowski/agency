@@ -1,7 +1,7 @@
 "use client";
-import CoursesPage from "@/components/CoursesPage";
 import Results from "@/components/Results";
-export default function Page({searchParams}: {searchParams: Record<string, string|undefined>}) {
-  // return <CoursesPage lang="ar" />;
+export default async function Page({searchParams}: {searchParams: Promise<Record<string, string|undefined>>}) {
+  const sp = await searchParams;
+
   return <Results lang="ar" initialQuery={searchParams}/>;
 }
