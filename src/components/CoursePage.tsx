@@ -1,4 +1,5 @@
 import { courseContent } from "@/data/courseContent"; 
+import { cityLabel } from "@/data/cityLabels";
 
 function Pill({ children }) {
 return <span className="px-2 py-1 rounded-full border bg-slate-50 text-xs">{children}</span>;
@@ -43,14 +44,14 @@ export default function CoursePage({ lang, dir, course }) {
 <div dir={dir} className="max-w-6xl mx-auto px-4 py-8">
        <nav className="text-sm text-slate-600 mb-3">
          <a href="/courses" className="hover:underline">{t.courses}</a> /{" "}
-         <a href={`/courses/${course.city}`} className="hover:underline">{course.city}</a> /{" "}
+         <a href={`/courses/${course.city}`} className="hover:underline">{cityLabel(course.city as any, lang)}</a> /{" "}
         <span className="text-slate-800">{course.title}</span>
       </nav>
 
 <header className="rounded-2xl border bg-white/80 p-6">
 <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
 <div>
-<h1 className="text-2xl font-bold">{course.title} – {course.city}</h1>
+<h1 className="text-2xl font-bold">{course.title} – {cityLabel(course.city as any, lang)}</h1>
 <div className="text-slate-600 mt-1">Provider Name</div>
 </div>
 <div className="text-right">
@@ -62,7 +63,7 @@ export default function CoursePage({ lang, dir, course }) {
 </div>
 <div className="mt-3 flex flex-wrap gap-2">
 <Pill>{course.type === "ielts" ? (lang === "ar" ? "IELTS" : "IELTS") : course.type}</Pill>
-<Pill>{course.city}</Pill>
+<Pill>{cityLabel(course.city as any, lang)}</Pill>
 </div>
 </header>
 

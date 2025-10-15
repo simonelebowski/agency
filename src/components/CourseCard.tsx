@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import type { Course } from "@/data/courses";
+import { cityLabel } from "@/data/cityLabels";
 
 export default function CourseCard({
   course,
@@ -24,7 +25,7 @@ export default function CourseCard({
         <div>
           <h3 className="text-lg font-semibold">{course.title}</h3>
           <div className="text-sm text-slate-600 mt-0.5">
-            {course.provider} • {course.city}, {course.country}
+            {course.provider} • {cityLabel(course.city as any, lang)}, {course.country}
           </div>
         </div>
         <div className="text-right">
