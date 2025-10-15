@@ -24,7 +24,7 @@ export default function EnglishAgencyLanding({ lang }) {
   if (!t) return null;
 
   // Simple course search demo (no backend)
-  const [filters, setFilters] = useState({ level: "", city: "", type: "" });
+  // const [filters, setFilters] = useState({ level: "", city: "", type: "" });
 
   // SEO meta & JSON-LD (for Next.js metadata API, you can move to layout or page)
   const jsonLd = {
@@ -66,7 +66,7 @@ export default function EnglishAgencyLanding({ lang }) {
       <Trust t={t} />
 
       {/* Course search */}
-      <CourseSearch t={t} filters={filters} setFilters={setFilters} />
+      <CourseSearch t={t} />
 
       {/* Services */}
       <Services t={t} />
