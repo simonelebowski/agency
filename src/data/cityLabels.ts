@@ -1,6 +1,7 @@
 // /data/cityLabels.ts
 export const CITY_LABELS = {
   london:  { en: "London",  ar: "لندن" },
+  edinburgh:  { en: "Edinburgh",  ar: "إدنبرة"},
   worthing:  { en: "Worthing",  ar: "وورثينج"},
   leeds:  { en: "Leeds",  ar: "ليدز" },
   oxford:  { en: "Oxford",  ar: "أوكسفورد" },

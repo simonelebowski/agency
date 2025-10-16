@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Section from "./Section";
 import { filters } from "@/data/filters";
+import { cityLabel } from "@/data/cityLabels";
 
-export default function CourseSearch({ t }: {t: any}) {
+export default function CourseSearch({ t, lang }: {t: any}) {
 const [filterSelection, setFilterSelection] = useState({ level: "", city: "", type: "" });
 
   const router = useRouter();
@@ -36,7 +37,7 @@ const [filterSelection, setFilterSelection] = useState({ level: "", city: "", ty
           <option value="">{t.search.city}</option>
           {filters.cities.map((x, index) => (
             <option key={index} value={x.toLowerCase()}>
-              {x}
+              {cityLabel(x.toLowerCase() as any, lang)}
             </option>
           ))}
         </select>

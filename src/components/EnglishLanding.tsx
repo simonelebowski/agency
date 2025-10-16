@@ -66,7 +66,7 @@ export default function EnglishAgencyLanding({ lang }) {
       <Trust t={t} />
 
       {/* Course search */}
-      <CourseSearch t={t} />
+      <CourseSearch t={t} lang={lang}/>
 
       {/* Services */}
       <Services t={t} />

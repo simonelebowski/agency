@@ -44,12 +44,12 @@ export default function Header({ t, lang }: { t: any; lang: Lang }) {
           <Link href={`${base}/courses`} className="hover:text-indigo-600">
             {t.nav.courses}
           </Link>
-          <a href="#services" className="hover:text-indigo-600">
+          <Link href={`${base}/services`} className="hover:text-indigo-600">
             {t.nav.services}
-          </a>
-          <a href="#locations" className="hover:text-indigo-600">
+          </Link>
+          <Link href={`${base}/locations`} className="hover:text-indigo-600">
             {t.nav.locations}
-          </a>
+          </Link>
           <a href="#pricing" className="hover:text-indigo-600">
             {t.nav.pricing}
           </a>
@@ -59,9 +59,9 @@ export default function Header({ t, lang }: { t: any; lang: Lang }) {
           <a href="#faq" className="hover:text-indigo-600">
             {t.nav.faq}
           </a>
-          <a href="#contact" className="hover:text-indigo-600">
+          <Link href={`${base}/contact`} className="hover:text-indigo-600">
             {t.nav.contact}
-          </a>
+          </Link>
         </nav>
         <div className="flex items-center gap-2">
           {/* <button
