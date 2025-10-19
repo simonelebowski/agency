@@ -19,13 +19,14 @@ export default function CourseCard({
     <Link
       href={href}
       dir={dir}
-      className="block rounded-2xl border bg-white hover:shadow-md transition-shadow p-5"
+      className="block rounded-2xl border bg-white hover:shadow-md transition-shadow p-5 flex flex-col justify-between"
     >
       <div className="flex items-start justify-between gap-4">
         <div>
           <h3 className="text-lg font-semibold">{course.title}</h3>
           <div className="text-sm text-slate-600 mt-0.5">
-            {course.provider} • {cityLabel(course.city as any, lang)}, {course.country}
+            {course.provider} • {cityLabel(course.city as any, lang)},{" "}
+            {course.country}
           </div>
         </div>
         <div className="text-right">
