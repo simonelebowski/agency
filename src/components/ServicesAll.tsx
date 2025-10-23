@@ -295,18 +295,18 @@ const Hairline = () => (
                   <div className="flex gap-2">
                     <a
                       href={s.cta[lang].primary.href}
-                      className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
+                      className="px-3 py-1.5 text-sm rounded-lg border border-green-600 text-green-700 hover:bg-green-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300"
+                      aria-label={isRTL ? "التواصل عبر واتساب" : "Chat on WhatsApp"}
                     >
-                      {s.cta[lang].primary.label}
+                      {isRTL ? "واتساب" : "WhatsApp"}
                     </a>
-                    {s.cta[lang].secondary ? (
-                      <a
-                        href={s.cta[lang].secondary.href}
-                        className="px-4 py-2 rounded-xl border bg-white hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300"
+                    <a
+                        // href={s.cta[lang].secondary.href}
+                        className="px-3 py-1.5 text-sm rounded-lg border bg-white text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300"
+                        aria-label={isRTL ? "نموذج التواصل" : "Contact form"}
                       >
-                        {s.cta[lang].secondary!.label}
-                      </a>
-                    ) : null}
+                        {isRTL ? "نموذج التواصل" : "Contact form"}
+                    </a>
                   </div>
                 </div>
               </SectionCard>
@@ -323,8 +323,8 @@ const Hairline = () => (
             <div className="text-sm text-slate-600">{isRTL ? "احجز استشارة مجانية 15 دقيقة أو تواصل عبر واتساب." : "Book a free 15-minute consult or chat on WhatsApp."}</div>
           </div>
           <div className="flex gap-2">
-            <a href="https://wa.me/966500000000" className="px-4 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300">WhatsApp</a>
-            <a href={isRTL ? "/contact" : "/en/contact"} className="px-4 py-2 rounded-xl border bg-white hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300">{isRTL ? "نموذج التواصل" : "Contact form"}</a>
+            <a href="https://wa.me/966500000000" className="px-4 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700 focus-visible:outline-none focus-visible:ring focus-visible:ring-green-300" aria-label={isRTL ? "التواصل عبر واتساب" : "Chat on WhatsApp"}>WhatsApp</a>
+            <a href={isRTL ? "/contact" : "/en/contact"} className="px-4 py-2 rounded-xl border bg-white hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300" aria-label={isRTL ? "نموذج التواصل" : "Contact form"}>{isRTL ? "نموذج التواصل" : "Contact form"}</a>
           </div>
         </section>
       </div>

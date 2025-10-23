@@ -48,18 +48,22 @@ export const content = {
       heading: "What we do",
       items: [
         {
+          id: "course-placement",
           title: "Course Placement",
           desc: "Personalized matching with accredited schools.",
         },
         {
+          id: "visa-guidance",
           title: "Visa Guidance",
           desc: "Documentation review and interview prep.",
         },
         {
+          id: "accommodation",
           title: "Accommodation",
           desc: "Homestay, residence, or private rentals.",
         },
         {
+          id: "airport-pickup",
           title: "Airport Pickup",
           desc: "Meet-and-greet and safe arrival support.",
         },
