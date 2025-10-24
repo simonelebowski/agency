@@ -102,46 +102,62 @@ export const content = {
       sub: "Visit us in person or book an online consultation.",
       overseasHeading: "Overseas study hubs",
       overseasSub: "Meet partner schools or start your course abroad.",
-      cities: [
-        {
-          city: "Riyadh",
-          address: "Prince Mohammed Bin Abdulaziz Rd",
-          phone: "+966 5 0000 0000",
-          map: "https://maps.google.com/maps?q=Riyadh&t=&z=12&ie=UTF8&iwloc=&output=embed",
-        },
-        {
-          city: "Jeddah",
-          address: "Prince Sultan Rd",
-          phone: "+966 5 0000 0000",
-          map: "https://maps.google.com/maps?q=Jeddah&t=&z=12&ie=UTF8&iwloc=&output=embed",
-        },
-        {
-          city: "Dammam",
-          address: "King Saud Rd",
-          phone: "+966 5 0000 0000",
-          map: "https://maps.google.com/maps?q=Dammam&t=&z=12&ie=UTF8&iwloc=&output=embed",
-        },
-      ],
-      hubs: [
-        {
-          city: "London",
-          country: "UK",
-          note: "By appointment at partner campus",
-          map: "https://maps.google.com/maps?q=London%20Language%20School&t=&z=12&ie=UTF8&iwloc=&output=embed",
-        },
-        {
-          city: "Dublin",
-          country: "Ireland",
-          note: "Central campus area",
-          map: "https://maps.google.com/maps?q=Dublin%20Language%20School&t=&z=12&ie=UTF8&iwloc=&output=embed",
-        },
-        {
-          city: "Toronto",
-          country: "Canada",
-          note: "Downtown partner school",
-          map: "https://maps.google.com/maps?q=Toronto%20Language%20School&t=&z=12&ie=UTF8&iwloc=&output=embed",
-        },
-      ],
+    cities: [
+      {
+    city: "London",
+    country: "UK",
+    note: "The UK’s academic capital and most connected city, offering a wide range of English schools across central and suburban areas.",
+    map: "https://maps.google.com/maps?q=London%20Language%20School&output=embed",
+  },
+  {
+    city: "Dublin",
+    country: "Ireland",
+    note: "A welcoming, student-friendly city known for its vibrant cultural life and clear English accent — ideal for first-time learners abroad.",
+    map: "https://maps.google.com/maps?q=Dublin%20Language%20School&output=embed",
+  },
+  {
+    city: "Toronto",
+    country: "Canada",
+    note: "Canada’s largest and most diverse city, offering top-quality language schools and safe urban living with easy public transport.",
+    map: "https://maps.google.com/maps?q=Toronto%20Language%20School&output=embed",
+  },
+  {
+    city: "Oxford",
+    country: "UK",
+    note: "Historic university city with a strong academic atmosphere and a range of boutique language institutes near college landmarks.",
+    map: "https://maps.google.com/maps?q=Oxford%20Language%20School&output=embed",
+  },
+  {
+    city: "Edinburgh",
+    country: "UK",
+    note: "Scotland’s cultural capital — compact, scenic, and full of heritage — home to long-established schools with small-group teaching.",
+    map: "https://maps.google.com/maps?q=Edinburgh%20Language%20School&output=embed",
+  },
+  {
+    city: "Vancouver",
+    country: "Canada",
+    note: "Coastal, nature-rich city with mild weather and many modern language centres focused on academic or work-study pathways.",
+    map: "https://maps.google.com/maps?q=Vancouver%20Language%20School&output=embed",
+  },
+  {
+    city: "Leeds",
+    country: "UK",
+    note: "Dynamic northern university city combining affordable living with high-quality teaching and a growing international student community.",
+    map: "https://maps.google.com/maps?q=Leeds%20Language%20School&output=embed",
+  },
+  {
+    city: "Cork",
+    country: "Ireland",
+    note: "Ireland’s second city — friendly, walkable, and less crowded than Dublin — with experienced local schools and homestay options.",
+    map: "https://maps.google.com/maps?q=Cork%20Language%20School&output=embed",
+  },
+  {
+    city: "Worthing",
+    country: "UK",
+    note: "A calm seaside town on England’s south coast, ideal for focused study in a relaxed setting just over an hour from London.",
+    map: "https://maps.google.com/maps?q=Worthing%20Language%20School&output=embed",
+  },
+]
     },
     testimonials: {
       heading: "Student stories",

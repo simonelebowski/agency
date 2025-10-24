@@ -72,7 +72,7 @@ export default function EnglishAgencyLanding({ lang }) {
       <Services t={t} />
 
       {/* Locations */}
-      <Locations t={t} />
+      <Locations t={t} lang={lang}/>
 
       {/* Pricing */}
       <Pricing t={t} />
