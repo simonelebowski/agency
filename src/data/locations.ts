@@ -65,6 +65,39 @@ export const locationsCatalog: Country[] = [
           },
         ],
       },
+      {
+        slug: "edinburgh",
+        name: { en: "Edinburgh", ar: "إدنبرة" },
+        schools: [
+          {
+            slug: "oxford-language-centre",
+            name: "Oxford Language Centre",
+            programs: ["General English","Intensive","Cambridge"],
+          },
+        ],
+      },
+      {
+        slug: "leeds",
+        name: { en: "Leeds", ar: "ليدز" },
+        schools: [
+          {
+            slug: "oxford-language-centre",
+            name: "Oxford Language Centre",
+            programs: ["General English","Intensive","Cambridge"],
+          },
+        ],
+      },
+      {
+        slug: "worthing",
+        name: { en: "Worthing", ar: "وورثينغ" },
+        schools: [
+          {
+            slug: "oxford-language-centre",
+            name: "Oxford Language Centre",
+            programs: ["General English","Intensive","Cambridge"],
+          },
+        ],
+      },
     ],
   },
   {
@@ -99,6 +132,17 @@ export const locationsCatalog: Country[] = [
           },
         ],
       },
+      {
+        slug: "cork",
+        name: { en: "Cork", ar: "كورك" },
+        schools: [
+          {
+            slug: "enterprise-language-college",
+            name: "Enterprise Language College",
+            programs: ["Business","General English"],
+          },
+        ],
+      },
     ],
   },
   {
@@ -108,6 +152,17 @@ export const locationsCatalog: Country[] = [
       {
         slug: "toronto",
         name: { en: "Toronto", ar: "تورونتو" },
+        schools: [
+          {
+            slug: "north-language-online",
+            name: "North Language Online",
+            programs: ["Online","Advanced","General English"],
+          },
+        ],
+      },
+      {
+        slug: "vancouver",
+        name: { en: "Vancouver", ar: "فانكوفر" },
         schools: [
           {
             slug: "north-language-online",
