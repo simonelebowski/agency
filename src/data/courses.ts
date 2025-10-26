@@ -7,9 +7,6 @@ export type Course = {
   durationWeeks: number;
   priceSAR: number; // Approx SAR (for display)
   startDates: string[]; // ISO dates
-  // highlights: string[];
-  // highlightsEN: string[];
-  // highlightsAR: string[];
 };
 
 export type CityCode =
@@ -33,9 +30,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 8,
       priceSAR: 3200,
       startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "intensive-general-english",
@@ -46,9 +40,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 12,
       priceSAR: 9800,
       startDates: ["2026-01-06", "2026-02-03"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "ielts",
@@ -59,9 +50,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "combination-course",
@@ -72,9 +60,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "cambridge-preparation",
@@ -85,9 +70,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "business-english",
@@ -98,9 +80,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 10,
       priceSAR: 8700,
       startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
   ],
   oxford: [
@@ -113,9 +92,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 8,
       priceSAR: 3200,
       startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "intensive-general-english",
@@ -126,9 +102,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 12,
       priceSAR: 9800,
       startDates: ["2026-01-06", "2026-02-03"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "ielts-prep",
@@ -139,9 +112,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "combination-course",
@@ -152,9 +122,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "cambridge-prep",
@@ -165,9 +132,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "business-english",
@@ -178,9 +142,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 10,
       priceSAR: 8700,
       startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
   ],
   leeds: [
@@ -193,9 +154,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 8,
       priceSAR: 3200,
       startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "intensive-general-english",
@@ -206,9 +164,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 12,
       priceSAR: 9800,
       startDates: ["2026-01-06", "2026-02-03"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "ielts-prep",
@@ -219,9 +174,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "combination-course",
@@ -232,9 +184,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "cambridge-prep",
@@ -245,9 +194,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "business-english",
@@ -258,9 +204,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 10,
       priceSAR: 8700,
       startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
   ],
   edinburgh: [
@@ -273,9 +216,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 8,
       priceSAR: 3200,
       startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "intensive-general-english",
@@ -286,9 +226,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 12,
       priceSAR: 9800,
       startDates: ["2026-01-06", "2026-02-03"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "ielts-prep",
@@ -299,9 +236,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "combination-course",
@@ -312,9 +246,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "cambridge-prep",
@@ -325,9 +256,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "business-english",
@@ -338,9 +266,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 10,
       priceSAR: 8700,
       startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
   ],
   worthing: [
@@ -353,9 +278,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 8,
       priceSAR: 3200,
       startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "intensive-general-english",
@@ -366,9 +288,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 12,
       priceSAR: 9800,
       startDates: ["2026-01-06", "2026-02-03"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "ielts-prep",
@@ -379,9 +298,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "combination-course",
@@ -392,9 +308,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "cambridge-prep",
@@ -405,9 +318,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "business-english",
@@ -418,9 +328,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 10,
       priceSAR: 8700,
       startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
   ],
   toronto: [
@@ -433,9 +340,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 8,
       priceSAR: 3200,
       startDates: ["2025-10-20", "2025-11-10", "2025-12-01"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Small groups", "Evening classes", "MOE-compliant"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "intensive-general-english",
@@ -446,9 +350,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 12,
       priceSAR: 9800,
       startDates: ["2026-01-06", "2026-02-03"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["20h/week", "Central campus", "Accommodation help"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "ielts-prep",
@@ -459,9 +360,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "combination-course",
@@ -472,9 +370,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "cambridge-prep",
@@ -485,9 +380,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 6,
       priceSAR: 4200,
       startDates: ["2025-10-25", "2025-11-15"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Mock tests", "Band 7+ strategies", "Speaking labs"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
     {
       slug: "business-english",
@@ -498,9 +390,6 @@ export const courses: CoursesByCity = {
       durationWeeks: 10,
       priceSAR: 8700,
       startDates: ["2025-11-05", "2025-12-03", "2026-01-07"],
-      // highlights: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsEN: ["Meet professionals", "Presentation skills", "Networking"],
-      // highlightsAR: ["Small groups", "Evening classes", "MOE-compliant"],
     },
   ],
 };
