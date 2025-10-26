@@ -183,15 +183,24 @@ export default function Services({ t }: { t: ServicesCopy }) {
               }`}
             >
               <Link
-  href={{ pathname: isRTL ? "/services" : "/en/services", hash: s.id }}
-  className="group text-sm inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border bg-white hover:bg-slate-50 transition focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300"
-  aria-label={isRTL ? `المزيد عن ${s.title}` : `Learn more about ${s.title}`}
->
-  {isRTL ? "المزيد" : "Learn more"}
-  <span className={`ms-1 transition-transform group-hover:translate-x-0.5 ${isRTL ? "-scale-x-100" : ""}`}>
-    →
-  </span>
-</Link>
+                href={{
+                  pathname: isRTL ? "/services" : "/en/services",
+                  hash: s.id,
+                }}
+                className="group text-sm inline-flex items-center gap-1 px-3 py-1.5 rounded-xl border bg-white hover:bg-slate-50 transition focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-300"
+                aria-label={
+                  isRTL ? `المزيد عن ${s.title}` : `Learn more about ${s.title}`
+                }
+              >
+                {isRTL ? "المزيد" : "Learn more"}
+                <span
+                  className={`ms-1 transition-transform group-hover:translate-x-0.5 ${
+                    isRTL ? "-scale-x-100" : ""
+                  }`}
+                >
+                  →
+                </span>
+              </Link>
             </div>
           </Card>
         ))}

@@ -1,5 +1,7 @@
 import { courseContent } from "@/data/courseContent";
 import { cityLabel } from "@/data/cityLabels";
+import FAQ from "./FAQ";
+import FAQs from "./FAQs";
 import Link from "next/link";
 
 function Pill({ children }) {
@@ -22,6 +24,24 @@ function KeyStat({ label, value }) {
 export default function CoursePage({ lang, dir, course }) {
   const t = courseContent[lang];
   const base = lang === "ar" ? "/locations" : "/en/locations";
+
+  const faqs = {
+    heading: "Frequently asked questions",
+    items: [
+      {
+        q: "Are your partner schools accredited?",
+        a: "Yes, we only work with recognized accreditation bodies such as British Council, ACCET, Languages Canada, and more.",
+      },
+      {
+        q: "Do you charge students?",
+        a: "Basic counseling is free. Optional premium services are available.",
+      },
+      {
+        q: "Can you help with visas?",
+        a: "We guide you on documentation and preparation. Final decisions are by the embassy.",
+      },
+    ],
+  };
 
   return (
     <div dir={dir} className="max-w-6xl mx-auto px-4 py-8">
@@ -106,20 +126,16 @@ export default function CoursePage({ lang, dir, course }) {
           </div>
 
           <div className="mt-6 rounded-2xl border bg-white/80 p-3">
-            {/* <div className="aspect-video w-full rounded-xl overflow-hidden border">
-<iframe title="map" src={} width="100%" height="100%" loading="lazy" />
-</div> */}
-          </div>
-
-          <div className="mt-6 rounded-2xl border bg-white/80 p-6">
-            <h3 className="font-semibold mb-2">
+            {/* <h3 className="font-semibold mb-2">
               {lang === "ar" ? "قد يعجبك أيضاً" : "You may also like"}
             </h3>
             <p className="text-sm text-slate-600">
               {lang === "ar"
                 ? "أظهر 2–3 دورات من نفس المدينة أو نفس النوع هنا."
                 : "Show 2–3 related offerings from same city or kind here."}
-            </p>
+            </p> */}
+            <FAQ faq={faqs} />
+            <FAQs faqs={faqs.items} lang={lang} />
           </div>
         </section>
 
