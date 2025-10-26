@@ -4,11 +4,11 @@ import { notFound } from "next/navigation";
 
 type Params = { city: string; slug: string };
 
-export default async function Page({ params }: { params: Promise<Params>; }) {
-const { city, slug } = await params;
+export default async function Page({ params }: { params: Promise<Params> }) {
+  const { city, slug } = await params;
 
-const offering = getOfferingByCitySlug(city as any, slug);
-if (!offering) return notFound();
+  const offering = getOfferingByCitySlug(city as any, slug);
+  if (!offering) return notFound();
 
-  return <CoursePage lang="en" dir='rtl' course={offering}/>;
+  return <CoursePage lang="en" dir="ltr" course={offering} />;
 }

@@ -1,13 +1,17 @@
 import React from "react";
+import Link from "next/link";
 import Section from "./Section";
 import Card from "./Card";
 
 function useSnapNav(ref: React.RefObject<HTMLDivElement>, isRTL: boolean) {
-  const scrollByAmount = React.useCallback((delta: number) => {
-    const el = ref.current;
-    if (!el) return;
-    el.scrollBy({ left: isRTL ? -delta : delta, behavior: "smooth" });
-  }, [ref, isRTL]);
+  const scrollByAmount = React.useCallback(
+    (delta: number) => {
+      const el = ref.current;
+      if (!el) return;
+      el.scrollBy({ left: isRTL ? -delta : delta, behavior: "smooth" });
+    },
+    [ref, isRTL]
+  );
 
   return {
     prev: () => scrollByAmount(window.innerWidth * 0.6 * -1),
@@ -15,14 +19,26 @@ function useSnapNav(ref: React.RefObject<HTMLDivElement>, isRTL: boolean) {
   };
 }
 
+function slugifyUnicode(input: string) {
+  return input
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[\u2000-\u206F\u2E00-\u2E7F'".,!?()[\]{}:;]+/g, "");
+}
+
+function getCityHref(cityName: string, cityCountry: string, lang: "en" | "ar") {
+  const base = lang === "ar" ? "/locations" : "/en/locations";
+  return `${base}/${slugifyUnicode(cityCountry)}/${slugifyUnicode(cityName)}`;
+}
+
 export default function Locations({ t, lang }) {
-  const isRTL = lang === 'ar'
+  const isRTL = lang === "ar";
   const viewportRef = React.useRef<HTMLDivElement>(null);
   const { prev, next } = useSnapNav(viewportRef, isRTL);
 
   return (
     <Section id="locations">
-
       {/* Section header */}
       <header className="mb-6">
         <h2 id="locations-heading" className="text-2xl font-bold">
@@ -65,39 +81,44 @@ export default function Locations({ t, lang }) {
         >
           <div className="inline-flex gap-4 pe-4 ps-1">
             {t.locations.cities.map((city, i) => (
-              <article
-                key={i}
-                className="snap-start w-[78vw] sm:w-[60vw]"
-              >
-                <Card>
-                  <div>
-                    <h4 className="text-lg font-semibold">
-                      {city.city}
-                      {city.country ? `, ${city.country}` : ""}
-                    </h4>
-                    {city.note && (
-                      <div className="text-sm text-slate-600 mt-1 line-clamp-2">
-                        {city.note}
-                      </div>
-                    )}
-                  </div>
+              <article key={i} className="snap-start w-[78vw] sm:w-[60vw]">
+                <Link
+                  href={getCityHref(city.city, city.country, t.lang)}
+                  className="group block focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-2xl"
+                  aria-label={`${city.city}${
+                    city.country ? `، ${city.country}` : ""
+                  }`}
+                >
+                  <Card>
+                    <div>
+                      <h4 className="text-lg font-semibold">
+                        {city.city}
+                        {city.country ? `, ${city.country}` : ""}
+                      </h4>
+                      {city.note && (
+                        <div className="text-sm text-slate-600 mt-1 line-clamp-2">
+                          {city.note}
+                        </div>
+                      )}
+                    </div>
 
-                  <div className="relative aspect-video w-full rounded-xl overflow-hidden border mt-4">
-                    {city.image ? (
-                      <img
-                        src={hub.image}
-                        alt={hub.city}
-                        loading="lazy"
-                        decoding="async"
-                        className="h-full w-full object-cover"
-                      />
-                    ) : (
-                      <div className="h-full w-full bg-slate-100 grid place-items-center text-slate-400 text-sm">
-                        No image
-                      </div>
-                    )}
-                  </div>
-                </Card>
+                    <div className="relative aspect-video w-full rounded-xl overflow-hidden border mt-4">
+                      {city.image ? (
+                        <img
+                          src={city.image}
+                          alt={city.city}
+                          loading="lazy"
+                          decoding="async"
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <div className="h-full w-full bg-slate-100 grid place-items-center text-slate-400 text-sm">
+                          No image
+                        </div>
+                      )}
+                    </div>
+                  </Card>
+                </Link>
               </article>
             ))}
           </div>
@@ -107,33 +128,42 @@ export default function Locations({ t, lang }) {
       {/* Desktop: simple grid */}
       <div className="hidden lg:grid lg:grid-cols-3 gap-4">
         {t.locations.cities.map((city, i) => (
-          <Card key={i}>
-            <div>
-              <h4 className="text-lg font-semibold">
-                {city.city}
-                {city.country ? `, ${city.country}` : ""}
-              </h4>
-              {city.note && (
-                <div className="text-sm text-slate-600 mt-1">{city.note}</div>
-              )}
-            </div>
+          <Link
+            key={i}
+            href={getCityHref(city.city, city.country, t.lang)}
+            className="group block focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-2xl"
+            aria-label={`${city.city}${
+              city.country ? `، ${city.country}` : ""
+            }`}
+          >
+            <Card>
+              <div>
+                <h4 className="text-lg font-semibold">
+                  {city.city}
+                  {city.country ? `, ${city.country}` : ""}
+                </h4>
+                {city.note && (
+                  <div className="text-sm text-slate-600 mt-1">{city.note}</div>
+                )}
+              </div>
 
-            <div className="aspect-video w-full rounded-xl overflow-hidden border mt-4">
-              {city.image ? (
-                <img
-                  src={city.image}
-                  alt={city.city}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover"
-                />
-              ) : (
-                <div className="h-full w-full bg-slate-100 grid place-items-center text-slate-400 text-sm">
-                  No image
-                </div>
-              )}
-            </div>
-          </Card>
+              <div className="aspect-video w-full rounded-xl overflow-hidden border mt-4">
+                {city.image ? (
+                  <img
+                    src={city.image}
+                    alt={city.city}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="h-full w-full bg-slate-100 grid place-items-center text-slate-400 text-sm">
+                    No image
+                  </div>
+                )}
+              </div>
+            </Card>
+          </Link>
         ))}
       </div>
     </Section>
