@@ -102,53 +102,62 @@ export const content = {
       sub: "Visit us in person or book an online consultation.",
       overseasHeading: "Overseas study hubs",
       overseasSub: "Meet partner schools or start your course abroad.",
-    cities: [
-      {
-    city: "London",
-    country: "UK",
-    note: "The UK’s academic capital and most connected city, offering a wide range of English schools across central and suburban areas.",
-  },
-  {
-    city: "Dublin",
-    country: "Ireland",
-    note: "A welcoming, student-friendly city known for its vibrant cultural life and clear English accent — ideal for first-time learners abroad.",
-  },
-  {
-    city: "Toronto",
-    country: "Canada",
-    note: "Canada’s largest and most diverse city, offering top-quality language schools and safe urban living with easy public transport.",
-  },
-  {
-    city: "Oxford",
-    country: "UK",
-    note: "Historic university city with a strong academic atmosphere and a range of boutique language institutes near college landmarks.",
-  },
-  {
-    city: "Edinburgh",
-    country: "UK",
-    note: "Scotland’s cultural capital — compact, scenic, and full of heritage — home to long-established schools with small-group teaching.",
-  },
-  {
-    city: "Vancouver",
-    country: "Canada",
-    note: "Coastal, nature-rich city with mild weather and many modern language centres focused on academic or work-study pathways.",
-  },
-  {
-    city: "Leeds",
-    country: "UK",
-    note: "Dynamic northern university city combining affordable living with high-quality teaching and a growing international student community.",
-  },
-  {
-    city: "Cork",
-    country: "Ireland",
-    note: "Ireland’s second city — friendly, walkable, and less crowded than Dublin — with experienced local schools and homestay options.",
-  },
-  {
-    city: "Worthing",
-    country: "UK",
-    note: "A calm seaside town on England’s south coast, ideal for focused study in a relaxed setting just over an hour from London.",
-  },
-]
+      cities: [
+        {
+          city: "London",
+          country: "UK",
+          note: "The UK’s academic capital and most connected city, offering a wide range of English schools across central and suburban areas.",
+          image: "/images/london.jpg",
+        },
+        {
+          city: "Dublin",
+          country: "Ireland",
+          note: "A welcoming, student-friendly city known for its vibrant cultural life and clear English accent — ideal for first-time learners abroad.",
+          image: "/images/dublin.jpg",
+        },
+        {
+          city: "Toronto",
+          country: "Canada",
+          note: "Canada’s largest and most diverse city, offering top-quality language schools and safe urban living with easy public transport.",
+          image: "/images/toronto.jpg",
+        },
+        {
+          city: "Oxford",
+          country: "UK",
+          note: "Historic university city with a strong academic atmosphere and a range of boutique language institutes near college landmarks.",
+          image: "/images/oxford.jpg",
+        },
+        {
+          city: "Edinburgh",
+          country: "UK",
+          note: "Scotland’s cultural capital — compact, scenic, and full of heritage — home to long-established schools with small-group teaching.",
+          image: "/images/edinburgh.jpg",
+        },
+        {
+          city: "Vancouver",
+          country: "Canada",
+          note: "Coastal, nature-rich city with mild weather and many modern language centres focused on academic or work-study pathways.",
+          image: "/images/vancouver.jpg",
+        },
+        {
+          city: "Leeds",
+          country: "UK",
+          note: "Dynamic northern university city combining affordable living with high-quality teaching and a growing international student community.",
+          image: "/images/leeds.jpg",
+        },
+        {
+          city: "Cork",
+          country: "Ireland",
+          note: "Ireland’s second city — friendly, walkable, and less crowded than Dublin — with experienced local schools and homestay options.",
+          image: "/images/cork.jpg",
+        },
+        {
+          city: "Worthing",
+          country: "UK",
+          note: "A calm seaside town on England’s south coast, ideal for focused study in a relaxed setting just over an hour from London.",
+          image: "/images/worthing.jpg",
+        },
+      ],
     },
     testimonials: {
       heading: "Student stories",
@@ -290,54 +299,53 @@ export const content = {
       sub: "تفضل بزيارتنا أو احجز استشارة أونلاين.",
       overseasHeading: "مراكز الدراسة بالخارج",
       overseasSub: "مقابلات مع المعاهد الشريكة أو بدء الدراسة خارج المملكة.",
-cities: [
-  {
-    city: "لندن",
-    country: "المملكة المتحدة",
-    note: "العاصمة الأكاديمية للمملكة المتحدة وأكثر مدنها اتصالًا، وتضم مجموعة واسعة من معاهد اللغة الإنجليزية في المناطق المركزية والضواحي.",
-  },
-  {
-    city: "دبلن",
-    country: "أيرلندا",
-    note: "مدينة ترحيبية وصديقة للطلاب، تشتهر بحياتها الثقافية النشطة ولهجتها الإنجليزية الواضحة — مثالية للدارسين في الخارج لأول مرة.",
-  },
-  {
-    city: "تورونتو",
-    country: "كندا",
-    note: "أكبر مدن كندا وأكثرها تنوعًا، تضم مدارس لغة عالية الجودة وحياة حضرية آمنة مع مواصلات عامة مريحة.",
-  },
-  {
-    city: "أوكسفورد",
-    country: "المملكة المتحدة",
-    note: "مدينة جامعية تاريخية بطابع أكاديمي مميز وتضم معاهد لغة متميزة بالقرب من معالم جامعة أوكسفورد الشهيرة.",
-  },
-  {
-    city: "إدنبرة",
-    country: "المملكة المتحدة",
-    note: "العاصمة الثقافية لاسكتلندا — مدينة مدمجة وجميلة غنية بالتاريخ — تضم مدارس عريقة تركز على التدريس ضمن مجموعات صغيرة.",
-  },
-  {
-    city: "فانكوفر",
-    country: "كندا",
-    note: "مدينة ساحلية غنية بالطبيعة ومناخها معتدل، تضم العديد من معاهد اللغة الحديثة التي تركز على الدراسة الأكاديمية أو برامج العمل والدراسة.",
-  },
-  {
-    city: "ليدز",
-    country: "المملكة المتحدة",
-    note: "مدينة جامعية نشطة في شمال إنجلترا تجمع بين تكاليف معيشة معقولة وتعليم عالي الجودة ومجتمع طلابي دولي متنامٍ.",
-  },
-  {
-    city: "كورك",
-    country: "أيرلندا",
-    note: "ثاني أكبر مدن أيرلندا — ودودة وسهلة التنقل وأقل ازدحامًا من دبلن — تضم مدارس ذات خبرة وخيارات إقامة مع عائلات محلية.",
-  },
-  {
-    city: "وورثينغ",
-    country: "المملكة المتحدة",
-    note: "مدينة ساحلية هادئة على الساحل الجنوبي لإنجلترا، مثالية للدراسة المركزة في أجواء مريحة وعلى بُعد أكثر من ساعة بقليل من لندن.",
-  },
-]
-
+      cities: [
+        {
+          city: "لندن",
+          country: "المملكة المتحدة",
+          note: "العاصمة الأكاديمية للمملكة المتحدة وأكثر مدنها اتصالًا، وتضم مجموعة واسعة من معاهد اللغة الإنجليزية في المناطق المركزية والضواحي.",
+        },
+        {
+          city: "دبلن",
+          country: "أيرلندا",
+          note: "مدينة ترحيبية وصديقة للطلاب، تشتهر بحياتها الثقافية النشطة ولهجتها الإنجليزية الواضحة — مثالية للدارسين في الخارج لأول مرة.",
+        },
+        {
+          city: "تورونتو",
+          country: "كندا",
+          note: "أكبر مدن كندا وأكثرها تنوعًا، تضم مدارس لغة عالية الجودة وحياة حضرية آمنة مع مواصلات عامة مريحة.",
+        },
+        {
+          city: "أوكسفورد",
+          country: "المملكة المتحدة",
+          note: "مدينة جامعية تاريخية بطابع أكاديمي مميز وتضم معاهد لغة متميزة بالقرب من معالم جامعة أوكسفورد الشهيرة.",
+        },
+        {
+          city: "إدنبرة",
+          country: "المملكة المتحدة",
+          note: "العاصمة الثقافية لاسكتلندا — مدينة مدمجة وجميلة غنية بالتاريخ — تضم مدارس عريقة تركز على التدريس ضمن مجموعات صغيرة.",
+        },
+        {
+          city: "فانكوفر",
+          country: "كندا",
+          note: "مدينة ساحلية غنية بالطبيعة ومناخها معتدل، تضم العديد من معاهد اللغة الحديثة التي تركز على الدراسة الأكاديمية أو برامج العمل والدراسة.",
+        },
+        {
+          city: "ليدز",
+          country: "المملكة المتحدة",
+          note: "مدينة جامعية نشطة في شمال إنجلترا تجمع بين تكاليف معيشة معقولة وتعليم عالي الجودة ومجتمع طلابي دولي متنامٍ.",
+        },
+        {
+          city: "كورك",
+          country: "أيرلندا",
+          note: "ثاني أكبر مدن أيرلندا — ودودة وسهلة التنقل وأقل ازدحامًا من دبلن — تضم مدارس ذات خبرة وخيارات إقامة مع عائلات محلية.",
+        },
+        {
+          city: "وورثينغ",
+          country: "المملكة المتحدة",
+          note: "مدينة ساحلية هادئة على الساحل الجنوبي لإنجلترا، مثالية للدراسة المركزة في أجواء مريحة وعلى بُعد أكثر من ساعة بقليل من لندن.",
+        },
+      ],
     },
     testimonials: {
       heading: "تجارب الطلاب",
