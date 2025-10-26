@@ -66,13 +66,13 @@ export default function EnglishAgencyLanding({ lang }) {
       <Trust t={t} />
 
       {/* Course search */}
-      <CourseSearch t={t} lang={lang}/>
+      <CourseSearch t={t} lang={lang} />
 
       {/* Services */}
       <Services t={t} />
 
       {/* Locations */}
-      <Locations t={t} lang={lang}/>
+      <Locations t={t} lang={lang} />
 
       {/* Pricing */}
       <Pricing t={t} />
@@ -84,7 +84,7 @@ export default function EnglishAgencyLanding({ lang }) {
       <CTA t={t} />
 
       {/* FAQ */}
-      <FAQ t={t} />
+      <FAQ faq={t.faq} />
 
       {/* Contact */}
       <Contact t={t} />

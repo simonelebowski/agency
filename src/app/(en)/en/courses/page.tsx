@@ -1,7 +1,9 @@
-"use client";
-import CoursesPage from "@/components/CoursesPage";
+import * as React from "react";
 import Results from "@/components/Results";
-export default function Page({searchParams}: {searchParams: Record<string, string|undefined>}) {
-  // return <CoursesPage lang="en" />;
-    return <Results lang="en" initialQuery={searchParams}/>;
+
+type SP = Record<string, string | undefined>;
+
+export default function Page({ searchParams }: { searchParams: Promise<SP> }) {
+  const sp = React.use(searchParams); // also fine
+  return <Results lang="en" initialQuery={sp} />;
 }

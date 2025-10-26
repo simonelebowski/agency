@@ -1,7 +1,9 @@
-"use client";
+import * as React from "react";
 import Results from "@/components/Results";
-export default async function Page({searchParams}: {searchParams: Promise<Record<string, string|undefined>>}) {
-  const sp = await searchParams;
 
-  return <Results lang="ar" initialQuery={searchParams}/>;
+type SP = Record<string, string | undefined>;
+
+export default function Page({ searchParams }: { searchParams: Promise<SP> }) {
+  const sp = React.use(searchParams); // also fine
+  return <Results lang="ar" initialQuery={sp} />;
 }

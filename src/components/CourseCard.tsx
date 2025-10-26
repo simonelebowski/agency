@@ -49,11 +49,11 @@ export default function CourseCard({
         </span>
       </div>
 
-      <ul className="mt-3 text-sm text-slate-700 list-disc ps-5 space-y-1">
+      {/* <ul className="mt-3 text-sm text-slate-700 list-disc ps-5 space-y-1">
         {course.highlights.slice(0, 3).map((h, i) => (
           <li key={i}>{h}</li>
         ))}
-      </ul>
+      </ul> */}
 
       <div className="mt-4 flex items-center justify-between">
         <div className="text-xs text-slate-600">
